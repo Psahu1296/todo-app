@@ -4,7 +4,7 @@ import { UserContext } from "./UserProvider";
 import { useNavigate } from "react-router-dom";
 
 const UserDetails = {
-  user: "Psahu",
+  user: "coder.dev@gmail.com",
   password: "Abcd1234",
 };
 
