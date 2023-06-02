@@ -1,7 +1,5 @@
 import React, { createContext, useState } from 'react';
 
-
-
 export interface Todo {
   id: number;
   text: string;

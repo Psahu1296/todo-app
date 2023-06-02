@@ -128,10 +128,10 @@ const TodoItem: React.FC<TodoItemProps> = ({
           className="add_image"
           onClick={() => setAddNewTodo(true)}
           src={addNew}
-          alt={""}
+          alt="add"
           style={{ height: 28 }}
         />
-        <img src={deleteIcon} className="delete_icon" onClick={handleDelete} />
+        <img src={deleteIcon} alt="delete" className="delete_icon" onClick={handleDelete} />
       </div>
       <ul>
         {todo.subTodos.map(
@@ -162,6 +162,7 @@ const TodoItem: React.FC<TodoItemProps> = ({
                 {subTodo.isCompleted && (
                   <img
                     src={deleteIcon}
+                    alt="delete"
                     className="delete_icon"
                     onClick={() => handleSubTodoDelete(subTodo.id)}
                   />
@@ -181,6 +182,7 @@ const TodoItem: React.FC<TodoItemProps> = ({
           />
           <img
             src={deleteIcon}
+            alt="delete"
             className="delete_icon"
             onClick={() => setAddNewTodo(false)}
           />

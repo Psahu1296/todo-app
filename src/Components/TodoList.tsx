@@ -1,22 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import AuthGuard from "./AuthGuard";
-import { deleteIcon } from "../assets";
 import TodoItem from "./TodoItems";
 import { UserContext } from "./UserProvider";
 import { useNavigate } from "react-router-dom";
 import {  Todo } from "./UserProvider";
 import { validateTodo } from "../utils/utils";
-
-// export interface Todo {
-//   id: number;
-//   text: string;
-//   isCompleted: boolean;
-//   subTodos: {
-//     id: number;
-//     text: string;
-//     isCompleted: boolean;
-//   }[];
-// }
 
 const TodoList = () => {
   const [newTodo, setNewTodo] = useState("");

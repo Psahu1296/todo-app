@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Todo from "./Components/TodoList";
-import AuthGuard from "./Components/AuthGuard";
 import Login from "./Components/Login";
 import { UserProvider } from "./Components/UserProvider";
 
