@@ -6,7 +6,6 @@ import { UserContext } from "./UserProvider";
 const AuthGuard = (Component: () => JSX.Element) =>
   function HOC() {
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(true)
-    const { username } = useContext(UserContext);
 
     useEffect(() => {
       const token = localStorage.getItem('token')
