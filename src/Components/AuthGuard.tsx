@@ -1,6 +1,5 @@
-import { useEffect, useState , useContext} from "react";
+import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
-import { UserContext } from "./UserProvider";
 
 // @ts-ignore
 const AuthGuard = (Component: () => JSX.Element) =>
