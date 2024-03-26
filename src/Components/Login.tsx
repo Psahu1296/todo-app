@@ -4,7 +4,7 @@ import { UserContext } from "./UserProvider";
 import { useNavigate } from "react-router-dom";
 
 const UserDetails = {
-  user: "coder.dev@gmail.com",
+  user: "coder.dev",
   password: "Abcd1234",
 };
 
@@ -65,6 +65,8 @@ const Login = () => {
         </div>
         <p className="error" style={{visibility: signError? 'visible': 'hidden'}}>*{signError}</p>
         <button onClick={signInHandler}>Sign In</button>
+        <p>USER: coder.dev</p>
+        <p>PASS: Abcd1234</p>
       </div>
     </div>
   );
